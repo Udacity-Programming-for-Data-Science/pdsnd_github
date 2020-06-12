@@ -13,6 +13,7 @@ Follow the instructions and complete all tasks listed in the form on Google File
 ### Files used
 Step 1: bikeshare.py, new_york_city.csv, chicago.csv, washington.csv, .gitignore
 
+Step 2: README.md
 ### Credits
 
 
