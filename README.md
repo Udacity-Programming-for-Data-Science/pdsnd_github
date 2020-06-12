@@ -19,5 +19,5 @@ Step 2: README.md
 Step 3: More changes added
 
 ### Credits
-
+Credit to Richard for original repo forked
 
