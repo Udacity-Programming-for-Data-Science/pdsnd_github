@@ -137,7 +137,7 @@ def user_stats(df):
     # TO DO: Display counts of user types
     print_results("Count of user types: ", "{:,}".format(df['User Type'].count()))
 
-    # [Updated] Washington, D.C. doesn't have gender or birth year data, adding try - except to avoid errors
+    # Washington, D.C. doesn't have gender or birth year data, adding try - except to avoid errors
     try:
         # TO DO: Display counts of gender
         print_results("Count of genders: ", "{:,}".format(df['Gender'].count()))
@@ -168,7 +168,7 @@ def print_results(text1, result, text2 = ''):
     
     print(text1 + result + text2 + "\n")
    
-# [Updated] Added time converter function to reduce duplicated codes
+# Added time converter function to reduce duplicated codes
 def time_converter(time):
     m, s = divmod(time, 60)
     h, m = divmod(m, 60)
@@ -190,7 +190,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
                   
-        # [Updated] Check with user whether showcase the first 5 rows of raw data. Keep asking until 1. user selects no, and 2. rows are exhausted
+        # Check with user whether showcase the first 5 rows of raw data. Keep asking until 1. user selects no, and 2. rows are exhausted
         display_raw_data = input("Do you want to check the first 5 rows of the raw data? yes/no \n")
         start_row = 0
         while display_raw_data not in ("yes", "no"):
