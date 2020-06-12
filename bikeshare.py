@@ -51,7 +51,7 @@ def load_data(city, month, day):
     """
     df = pd.read_csv(CITY_DATA[city])
     
-    # pre-process the dataframe for conveniently analyze the data later
+    # Steming month, day and hour columns
     df['Start Time'] = pd.to_datetime(df['Start Time'])
     df['month'] = df['Start Time'].dt.month
     df['day'] = df['Start Time'].dt.weekday_name
@@ -66,7 +66,6 @@ def load_data(city, month, day):
     # filter by day of week if applicable
     if day != 'all':
         df = df[df['day'] == day.title()]
-    #print(df[1: 5])
     return df
 
 
